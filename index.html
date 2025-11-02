@@ -3,152 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S-Noh의 포트폴리오</title>
+    <title>S-Noh | Academic Portfolio</title>
     <style>
         /* CSS 스타일 시작 */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #e9ecef; /* 은은한 회색 배경 */
+            color: #495057;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            justify-content: center;
+            align-items: flex-start;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1;
+        .portfolio-wrap {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
         }
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
+        .header-section {
+            background-color: #004d99; /* 진한 파란색 헤더 */
+            color: white;
+            padding: 30px 40px;
+            text-align: left;
         }
 
-        header h1 {
+        .header-section h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            letter-spacing: 1px;
         }
 
-        header p {
-            font-size: 1.1em;
+        .header-section p {
             margin-top: 5px;
+            font-size: 1.2em;
+            opacity: 0.85;
         }
 
-        section {
-            padding: 20px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
+        .content-section {
+            padding: 40px;
         }
 
         h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+            color: #004d99;
+            border-bottom: 3px solid #004d99;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.8em;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        .item {
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 4px solid #f0ad4e; /* 강조색 */
         }
 
-        ul li {
+        .item h3 {
+            color: #343a40;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.3em;
+        }
+
+        .item p {
+            font-size: 0.95em;
             margin-bottom: 10px;
         }
 
-        a {
-            color: #007bff;
-            text-decoration: none;
+        .skill-list {
+            list-style: disc;
+            margin-left: 20px;
         }
 
-        a:hover {
+        .contact-info a {
+            color: #004d99;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
             text-decoration: underline;
         }
-
-        .profile-img {
-            display: block;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px auto;
-            border: 4px solid #007bff;
-        }
-
-        footer {
+        
+        .footer-section {
+            background-color: #343a40;
+            color: #ccc;
             text-align: center;
             padding: 20px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-            border-radius: 0 0 8px 8px;
+            font-size: 0.9em;
         }
         /* CSS 스타일 끝 */
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <div class="portfolio-wrap">
+        
+        <header class="header-section">
             <h1>S-Noh</h1>
-            <p>IT 전공 1학년 | 개발 학습자</p>
+            <p>컴퓨터공학부 1학년 | 학습 여정 & 기술 포트폴리오</p>
         </header>
 
-        <section id="about">
-            <h2>자기소개</h2>
-            <p>
-                안녕하세요! 저는 IT 학과 1학년에 재학 중인 S-Noh입니다.
-                새로운 기술을 배우고 코딩하는 것에 큰 즐거움을 느끼고 있습니다.
-                특히 웹 개발 분야에 깊은 관심을 가지고 있으며, 사용자에게 유용한 서비스를
-                만들기 위해 끊임없이 노력하고 있습니다. 아직은 배우는 단계이지만,
-                기본기를 탄탄히 다져나가며 미래의 개발자를 꿈꾸고 있습니다.
-            </p>
-        </section>
+        <div class="content-section">
+            
+            <section id="summary">
+                <h2>요약 (Summary)</h2>
+                <p>
+                    IT 기술에 대한 깊은 호기심을 바탕으로, 프로그래밍 언어의 기본 구조와 컴퓨터 시스템의 원리를 탐구하고 있습니다. 
+                    대학교 1학년 과정을 통해 **자료구조**와 **알고리즘**에 대한 탄탄한 이해를 목표로 하며, 
+                    특히 **Git과 GitHub**를 활용한 협업 및 프로젝트 관리에 익숙해지는 것에 집중하고 있습니다.
+                </p>
+            </section>
 
-        <section id="skills">
-            <h2>기술 스택</h2>
-            <ul>
-                <li><strong>기초 프로그래밍:</strong> Python, C (기초)</li>
-                <li><strong>웹 개발 (프론트엔드 기초):</strong> HTML, CSS, JavaScript (학습 중)</li>
-                <li><strong>버전 관리:</strong> Git, GitHub</li>
-                <li><strong>운영체제:</strong> Windows, Linux (기초)</li>
-            </ul>
-        </section>
+            <section id="education">
+                <h2>학력 및 교육</h2>
+                <div class="item">
+                    <h3>OO대학교 컴퓨터공학부</h3>
+                    <p>재학 중 (2024년 3월 입학)</p>
+                    <p><strong>주요 관심 분야:</strong> 웹 서비스 아키텍처, 네트워크 통신</p>
+                </div>
+            </section>
 
-        <section id="projects">
-            <h2>프로젝트 (예시)</h2>
-            <p>아직 진행 중인 프로젝트는 없지만, 앞으로 여기에 멋진 작업들을 채워나갈 예정입니다!</p>
-            <ul>
-                <li><strong>[프로젝트명 1]</strong> - 간단한 계산기 웹 페이지 (HTML, CSS, JS 활용)</li>
-                <li><strong>[프로젝트명 2]</strong> - Python으로 만드는 터미널 기반 게임</li>
+            <section id="skills">
+                <h2>핵심 기술 스택</h2>
+                <ul class="skill-list">
+                    <li>**프로그래밍 언어:** C (기본 문법), Python (데이터 처리 및 스크립팅)</li>
+                    <li>**마크업/스타일:** HTML5, CSS3 (기본 레이아웃 및 스타일링 이해)</li>
+                    <li>**버전 관리:** **Git & GitHub** (개인/팀 프로젝트 버전 관리 및 협업 경험)</li>
+                    <li>**운영 환경:** Windows, WSL 환경에서의 Linux 기본 명령어 사용 가능</li>
                 </ul>
-        </section>
+            </section>
 
-        <section id="contact">
-            <h2>연락처</h2>
-            <ul>
-                <li><strong>이메일:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/S-Noh" target="_blank">github.com/S-Noh</a></li>
-                </ul>
-        </section>
+            <section id="projects">
+                <h2>주요 프로젝트 및 과제</h2>
+                <div class="item">
+                    <h3>1. GitHub Pages 개인 홈페이지 구축</h3>
+                    <p>GitHub Repository를 활용하여 정적 웹 호스팅 환경을 이해하고 개인 포트폴리오 페이지를 배포했습니다. (HTML/CSS 기반)</p>
+                    <p><a href="https://s-noh.github.io" target="_blank">프로젝트 링크 바로가기</a></p>
+                </div>
+                <div class="item">
+                    <h3>2. C언어 배열 기반 간단한 미로 찾기 (가제)</h3>
+                    <p>C 언어의 배열과 반복문을 활용하여 텍스트 기반의 미로 찾기 프로그램을 구현했습니다.</p>
+                    <p><strong>주요 학습 내용:</strong> 메모리 관리, 함수 포인터 (학습 예정)</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>연락처</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p><strong>GitHub Profile:</strong> <a href="https://github.com/S-Noh" target="_blank">github.com/S-Noh</a></p>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer-section">
+            &copy; 2024 S-Noh Academic Portfolio | 업데이트: 2024년 11월
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2023 S-Noh. All rights reserved.</p>
-    </footer>
 </body>
 </html>
